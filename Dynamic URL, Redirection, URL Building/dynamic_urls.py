@@ -13,7 +13,7 @@ def welcome_steve():
 
 @app.route('/welcome/<user>')
 def welcome_tony(user): 
-    return f'<h1>Welcome {user}</h1>'
+    return f'<h1>Welcome {user.title()}</h1>'
 
 if __name__ == "__main__":
     app.run(debug=True)
