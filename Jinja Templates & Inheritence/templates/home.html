@@ -1,0 +1,15 @@
+{%extends 'layout.html' %}
+
+{% block content %}
+<h3>Content :</h3>
+<ul>
+    <li>Home</li>
+    <li><a href="{{url_for('about')}}" target="_blank">About</a></li>
+    <li><a href="{{url_for('employee')}}">Employee</a></li>
+    <ul>
+        <li><a href="{{url_for('managers')}}" target="_blank">Managers</a></li>
+    </ul>
+    <li>Contact</li>
+</ul>
+
+{% endblock content %}
